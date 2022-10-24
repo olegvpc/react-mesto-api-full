@@ -1,0 +1,19 @@
+.page__header {
+  width: 100%;
+  padding: 45px 0 41px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /*border:1px dashed green;*/
+}
+
+@media screen and (max-width: 568px) {
+  .add-wrapped-class .page__header {
+    /*padding: 0 0 32px;*/
+    padding: 0;
+    flex-direction: column-reverse;
+    align-items: center;
+    /*border:1px dashed green;*/
+  }
+}

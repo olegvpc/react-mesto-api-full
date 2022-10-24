@@ -1,0 +1,18 @@
+.header__btn-open {
+    display: none;
+}
+@media screen and (max-width: 568px) {
+  .add-wrapped-class .header__btn-open {
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-image: url(../../../images/icon__burger.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: transparent;
+      border: none;
+      margin-right: 30px;
+      cursor: pointer;
+  }
+}

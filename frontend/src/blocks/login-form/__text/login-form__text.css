@@ -1,0 +1,14 @@
+.login-form__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0 0;
+  padding: 0;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+}
+.login-form__text p {
+  margin: 0;
+}

@@ -1,0 +1,15 @@
+.popup__form {
+  width: calc(100% - 2 * 36px);
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.21;
+  margin: 36px auto 36px;
+}
+
+@media (max-width: 568px) {
+  .popup__form {
+    width: calc(100% - 2 * 22px);
+  }
+}

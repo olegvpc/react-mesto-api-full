@@ -1,0 +1,27 @@
+.header__navs_link {
+  color: white;
+  /*max-height: 22px;*/
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+
+  /*border: 1px solid green;*/
+}
+
+@media screen and (max-width: 568px) {
+  .header__navs_link {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .add-wrapped-class .header__navs_link {
+    align-self: center;
+    text-align: center;
+    /*margin-bottom: 40px;*/
+    margin-right: 0;
+  }
+}

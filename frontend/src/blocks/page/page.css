@@ -1,0 +1,16 @@
+body {
+    max-width: 1280px;
+    font-family: 'Inter', Arial, sans-serif;
+    color: #FFFFFF;
+    font-weight: 400;
+    /* background-color: #62016D; */
+    background-color: #000;
+    margin: 0 auto;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+/*
+    -webkit-text-size-adjust: 100%; */
+    -ms-text-size-adjust: 100%;
+    /* -moz-text-size-adjust: 100%; */
+  }

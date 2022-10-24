@@ -1,0 +1,14 @@
+.header__wrapped-logo {
+
+}
+@media screen and (max-width: 568px) {
+  .add-wrapped-class .header__wrapped-logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*border: 1px solid green;*/
+    margin: 27px 32px;
+  }
+
+}

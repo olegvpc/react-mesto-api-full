@@ -1,0 +1,10 @@
+.login-form__button {
+  margin-top: 216px;
+  min-height: 50px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  color: black;
+  background: #FFFFFF;
+  border-radius: 2px;
+}

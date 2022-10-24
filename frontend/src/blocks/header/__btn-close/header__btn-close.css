@@ -1,0 +1,19 @@
+.header__btn-close {
+  display: none;
+}
+
+@media screen and (max-width: 568px) {
+  .add-wrapped-class .header__btn-close {
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-image:
+      linear-gradient(135deg, transparent 45%, #ffffff 45%, #ffffff 55%, transparent 55%),
+      linear-gradient(225deg, transparent 45%, #ffffff 45%, #ffffff 55%, transparent  55%);
+      border-radius: 15px;
+      background-color: rgba(0,0,0,.0);
+      border: none;
+      margin-right: 30px;
+      cursor: pointer;
+  }
+}

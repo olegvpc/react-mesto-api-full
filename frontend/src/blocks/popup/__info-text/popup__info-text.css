@@ -1,0 +1,18 @@
+.popup__info-text {
+    max-width: 358px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+    /*border: 1px solid red;*/
+    margin: 0 calc((100% - 358px) / 2) 60px;
+}
+
+@media screen and (max-width: 568px) {
+  .popup__info-text {
+    max-width: 282px;
+    font-size: 20px;
+    margin: 0 calc((100% - 282px)/2) 60px;
+  }
+}

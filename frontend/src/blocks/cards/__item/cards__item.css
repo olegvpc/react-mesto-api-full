@@ -1,0 +1,7 @@
+.cards__item {
+  background-color: #FFFFFF;
+  width: 100%;
+  max-height: 361px;
+  border-radius: 10px;
+  list-style: none;
+}
