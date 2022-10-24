@@ -41,6 +41,14 @@ app.use(helmet());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// тестирование на восстановление работы сервера
+// Не забыть удалить этот код после успешного прохождения ревью.
+app.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
+});
+
 app.post(
   '/signin',
   celebrate({
