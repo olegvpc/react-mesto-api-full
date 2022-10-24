@@ -97,12 +97,14 @@ class Api {
   };
 }
 
+const token = localStorage.getItem('jwt');
 const api = new Api({
   // baseUrl: 'https://mesto.nomoreparties.co/v1/cohort-45',
   baseUrl: 'http://localhost:4000',
+  // baseUrl: 'https://api.olegvpc.students.nomoredomains.icu',
   headers: {
     // authorization: 'c6ae09bb-60e1-4878-abd8-c5707855c0f1',
-    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzU0Y2RkNzNhOTU4Nzg4NTkyNjcwZDYiLCJpYXQiOjE2NjY1MDU1NjYsImV4cCI6MTY2NzExMDM2Nn0.tsSGj2wmNp-FJBAQffbrjEaldG6lr1HWHKi9KTq9zdo',
+    authorization: `Bearer ${token}`,
     'Content-Type': 'application/json'
   }
 });
