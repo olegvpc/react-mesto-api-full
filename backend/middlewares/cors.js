@@ -3,6 +3,8 @@ const DEFAULT_ALLOWED_METHODS = 'GET,HEAD,PUT,PATCH,POST,DELETE';
 const allowedCors = [
   'localhost:3000',
   'http://localhost:3000',
+  'localhost:4000',
+  'http://localhost:4000',
   'olegvpc.students.nomoredomains.icu',
   'http://olegvpc.students.nomoredomains.icu',
   'https://olegvpc.students.nomoredomains.icu',

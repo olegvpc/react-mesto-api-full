@@ -13,9 +13,7 @@ module.exports.auth = (req, res, next) => {
 
   const token = authorization.replace('Bearer ', '');
   // console.log(token);
-  // eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzMzZjRiMDAwMmY5ZmU3OGJi
-  // NGM3NzUiLCJpYXQiOjE2NjQzNTUwMzMsImV4cCI6MTY2NDk1OTgzM30.3Qn_WtHe0x_UH8Go
-  // 4mPGifbCxHq5vosn5iHKfyTnmW0
+
   let payload;
   try {
     payload = jwt.verify(token, NODE_ENV === 'production' ? JWT_SECRET : 'some-secret-key');

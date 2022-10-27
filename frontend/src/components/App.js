@@ -59,7 +59,7 @@ function App() {
 
     // проверка наличия токена юзера в localStorage - если есть, то провести аутентификация юзера
     useEffect(() => {
-        // console.count("RENDER - TOKEN") // пустой массив зависимостей - Render только при монтировании
+        console.count("RENDER - TOKEN") // пустой массив зависимостей - Render только при монтировании
         checkToken();
     }, [])
 
@@ -75,7 +75,6 @@ function App() {
                     console.log(`ошибка получения данных по API при первичном обращении за карточками и юзером ${err}`);
                 })
         }
-
     }, [loggedIn])
 
     function handleCardLike(card) {
@@ -212,7 +211,7 @@ function App() {
     authorize(password, email)
       .then((res) => {
         if(res) {
-          console.log(res) // {jwt: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M…wMjV9.9pPYi85hDTK9YjUAKDzJysGnSO1LAzQp8Vsql244vr4'}
+          // console.log(res) // {jwt: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M…wMjV9.9pPYi85hDTK9YjUAKDzJysGnSO1LAzQp8Vsql244vr4'}
           setLoggedIn(true);
           setUserEmailOnHeader(email);
           history.push('/');
@@ -233,9 +232,10 @@ function App() {
         if(res) {
           // console.log(res)
           setUserEmailOnHeader(res.email)
-        };
+        }
         setLoggedIn(true);
         history.push('/');
+        // console.log(isToken)
       })
       .catch((err) => {
         console.log(err);
